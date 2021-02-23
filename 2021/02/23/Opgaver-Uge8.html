@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Opgaver Uge8 | Simon B. Hansens Blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Opgaver Uge8" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1. Explain how the “pixel similarity” approach to classifying digits works." />
+<meta property="og:description" content="1. Explain how the “pixel similarity” approach to classifying digits works." />
+<link rel="canonical" href="https://simonhanseen.github.io/fastpages/2021/02/23/Opgaver-Uge8.html" />
+<meta property="og:url" content="https://simonhanseen.github.io/fastpages/2021/02/23/Opgaver-Uge8.html" />
+<meta property="og:site_name" content="Simon B. Hansens Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-23T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://simonhanseen.github.io/fastpages/2021/02/23/Opgaver-Uge8.html","@type":"BlogPosting","headline":"Opgaver Uge8","dateModified":"2021-02-23T00:00:00-06:00","datePublished":"2021-02-23T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://simonhanseen.github.io/fastpages/2021/02/23/Opgaver-Uge8.html"},"description":"1. Explain how the “pixel similarity” approach to classifying digits works.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://simonhanseen.github.io/fastpages/feed.xml" title="Simon B. Hansens Blog" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Simon B. Hansens Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Opgaver Uge8</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-02-23T00:00:00-06:00" itemprop="datePublished">
+        Feb 23, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><strong>1. Explain how the “pixel similarity” approach to classifying digits works.</strong></p>
+
+<ul>
+  <li>Finder gennemsnitlig værdi for hver individuelle pixel i billedet og laver et ideelt billede. Derefte sammenligner den med de ideelle billeder for at karakterisere tallet.</li>
+</ul>
+
+<p><strong>2. What is a list comprehension? Create one now that selects odd numbers from a list and doubles them.</strong></p>
+
+<ul>
+  <li>Måde at lave en liste (LINQ)</li>
+</ul>
+
+<table>
+<tbody>
+<tr class="odd">
+<td>numbers = [1,2,3,4,5,6,7,8,9]<br />
+odd = [x*2 for x in numbers if x%2==0]</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>3. What is a “rank-3 tensor”?</strong></p>
+
+<ul>
+  <li>Tre dimensionel tensor</li>
+</ul>
+
+<p><img src="https://simonhanseen.github.io/fastpages/assets/img/2021-02-23-Opgaver-Uge8/media/image1.png" alt="" /><img src="https://simonhanseen.github.io/fastpages/assets/img/2021-02-23-Opgaver-Uge8/media/image2.png" alt="" /></p>
+
+<p><strong>4. What are RMSE and L1 norm?</strong></p>
+
+<ul>
+  <li>
+    <p><strong>L1 norm:</strong> </p>
+  </li>
+  <li>
+    <p>Take the mean of the <em>absolute value</em> of differences (absolute value is the function that replaces negative values with positive values). This is called the <em>mean absolute difference</em> or <em>L1 norm</em></p>
+  </li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+  <li>
+    <p><strong>(L2 norm) RMSE:</strong> </p>
+  </li>
+  <li>
+    <p>Take the mean of the <em>square</em> of differences (which makes everything positive) and then take the <em>square root</em> (which undoes the squaring). This is called the <em>root mean squared error</em> (RMSE) or <em>L2 norm</em>.</p>
+  </li>
+</ul>
+
+<p><strong>5. Create a 3×3 tensor or array containing the numbers from 1 to 9. Double it. Select the bottom-right four numbers.</strong></p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td><p>data =  [[1,2,3],[4,5,6],[7,8,9]]</p>
+<p>tens = tensor(data) * 2</p>
+<p>tens[-2:, -2:]</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>eller:</p>
+
+<p><img src="https://simonhanseen.github.io/fastpages/assets/img/2021-02-23-Opgaver-Uge8/media/image3.png" alt="" /></p>
+
+<p><strong>6. What is broadcasting?</strong></p>
+
+<ul>
+  <li>Broadcasting means it will automatically expand the tensor with the smaller rank to have the same size as the one with the larger rank.</li>
+</ul>
+
+<p><strong>7. Are metrics generally calculated using the training set, or the validation set? Why?</strong></p>
+
+<ul>
+  <li>
+    <p>Metrics are always calculated on the validation set.</p>
+  </li>
+  <li>
+    <p>Fordi Metrics fortæller os om kvaliteten af vores model</p>
+  </li>
+</ul>
+
+<p><strong>8. What is SGD?</strong></p>
+
+<ul>
+  <li>Stochastic gradient descent (often abbreviated SGD) is an <a href="https://en.wikipedia.org/wiki/Iterative_method"><span class="underline">iterative method</span></a> for <a href="https://en.wikipedia.org/wiki/Mathematical_optimization"><span class="underline">optimizing</span></a> an <a href="https://en.wikipedia.org/wiki/Objective_function"><span class="underline">objective function</span></a> with suitable <a href="https://en.wikipedia.org/wiki/Smoothness"><span class="underline">smoothness</span></a> properties (e.g. <a href="https://en.wikipedia.org/wiki/Differentiable_function"><span class="underline">differentiable</span></a> or <a href="https://en.wikipedia.org/wiki/Subgradient_method"><span class="underline">subdifferentiable</span></a>).</li>
+</ul>
+
+<p><strong>9. What are the seven steps in SGD for machine learning?</strong></p>
+
+<ul>
+  <li>
+    <p>Initialize the weights.</p>
+  </li>
+  <li>
+    <p>For each image, use these weights to predict whether it appears to be a 3 or a 7.</p>
+  </li>
+  <li>
+    <p>Based on these predictions, calculate how good the model is (its loss).</p>
+  </li>
+  <li>
+    <p>Calculate the gradient, which measures for each weight, how changing that weight would change the loss</p>
+  </li>
+  <li>
+    <p>Step (that is, change) all the weights based on that calculation.</p>
+  </li>
+  <li>
+    <p>Go back to the step 2, and repeat the process.</p>
+  </li>
+  <li>
+    <p>Iterate until you decide to stop the training process (for instance, because the model is good enough or you don’t want to wait any longer).</p>
+  </li>
+</ul>
+
+<p><strong>10. How do we initialize the weights in a model?</strong></p>
+
+<ul>
+  <li>Random values</li>
+</ul>
+
+<p><strong>11. What is “loss”?</strong></p>
+
+<ul>
+  <li>A measure of how good the model is, chosen to drive training via SGD(Stochastic Gradient Descent)</li>
+</ul>
+
+<p><strong>12. Why can’t we always use a high learning rate?</strong></p>
+
+<ul>
+  <li>
+    <p>Risikere at “hoppe” (step over) vores optimal/local minimum</p>
+  </li>
+  <li>
+    <p>Kan risikere at få en forværret loss</p>
+  </li>
+  <li>
+    <p>Risiko for at den “bouncer” som kan resultere i at der skal betydeligt flere trainings til at få trænet med succes</p>
+  </li>
+</ul>
+
+<p><strong>13. What is a “gradient”?</strong></p>
+
+<ul>
+  <li>
+    <p>En gradient måler ændringen i alle vægtene i forhold til ændringen i error.</p>
+  </li>
+  <li>
+    <p>Gradient is simply a vector which gives the direction of maximum rate of change. By taking steps in that direction, we hope to reach our optimal solution.</p>
+  </li>
+</ul>
+
+<p><strong>14. Why can’t we use accuracy as a loss function?</strong></p>
+
+<p>Gradient can be written in this in mathematically as: (y_new - y_old) / (x_new - x_old). This gives us a good approximation of the gradient when x_new is very similar to x_old, meaning that their difference is very small.<br />
+But accuracy only changes at all when a prediction changes from a 3 to a 7, or vice versa. The problem is that a small change in weights from x_old to x_new isn’t likely to cause any prediction to change, so (y_new - y_old) will almost always be 0. In other words, the gradient is 0 almost everywhere.</p>
+
+<p><strong>15. What is the difference between a loss function and a metric?</strong></p>
+
+<p>Loss: A measure of how good the model is, chosen to drive training via SGD(Stochastic Gradient Descent)</p>
+
+<p>Metric: A measurement of how good the model is, using the validation set, chosen for human consumption</p>
+
+<ul>
+  <li>
+    <blockquote>
+      <p>A loss function is used to <strong>train</strong> your model. A metric is used to <strong>evaluate</strong> your model.</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>A loss function is used <strong>during</strong> the learning process. A metric is used <strong>after</strong> the learning process</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p><strong>16. What is the function to calculate new weights using a learning rate?</strong></p>
+
+<p><strong>17. What does the backward method do?</strong></p>
+
+  </div><a class="u-url" href="/fastpages/2021/02/23/Opgaver-Uge8.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/fastpages/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
